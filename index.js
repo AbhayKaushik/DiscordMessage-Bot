@@ -9,11 +9,11 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const hook = new Discord.WebHookClient('weebhook id','webhook token');
 
-app.intent('ENTER THE INTENT NAME', (conv, {ENTER THE PARAMETER NAME}) => {
-    conv.close('Sure,I'll message them on Discord');
+app.intent('ENTER THE INTENT NAME', (conv, {ENTER_THE_PARAMETER_NAME}) => {
+    conv.close('Sure,I will message them on Discord');
 });
 
-hook.send('Let's play PUBG friends!');
+hook.send('Lets play PUBG friends!');
 
 client.on("ready", () => {
   console.log("I am ready!");
